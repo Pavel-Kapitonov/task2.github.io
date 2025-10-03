@@ -29,20 +29,20 @@ ol {
 }
 
 ol li p {
-  display: inline;
+  display: inline; /*отображение как часть текста списка без каких-либо отступов и т.д.*/
 }
 
 .header {
-    box-sizing: border-box;
+    box-sizing: border-box; /* задаем общие размеры блока включая padding */
     width: 100%;
     background-color: #EDEFF2;
     padding: 10px;
     height: 120px;
     border-radius: 20px;
 
-    display: flex;
+    display: flex; /* превращаю хедер в контейнер гибкий, чтобы потом им удобнее управлять*/
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* первый элемент к началу второй к краю */
 }
 
 .header-left {
@@ -106,9 +106,9 @@ ol li p {
 
 table {
   width: 100%; 
-  border-collapse: separate; 
+  border-collapse: separate;  /* границы яйчеек отдельно */
   border-spacing: 0;
-  border: 2px solid #ccc;
+  border: 2px solid #ccc; /* Добавляем обводку для всей таблицы */
   border-radius: 12px;
   margin-top: 20px; 
 }
@@ -154,7 +154,7 @@ tr:hover {
 
 
 .footer {
-    box-sizing: border-box;
+    box-sizing: border-box; /* задаем общие размеры блока включая padding */
     width: 100%;
     height: 120px;
     background-color: #EDEFF2;
@@ -178,7 +178,7 @@ tr:hover {
 }
 
 .myform label {
-    display: inline-block;
+    display: inline-block; /* полный контроль над размером сохраняя поведение в потоке текста*/
     margin-top: 7px;
 }
 
@@ -195,5 +195,4 @@ tr:hover {
 
 .content-header h2 {
     margin-top: 40px;
-
 }
